@@ -1,0 +1,141 @@
+.navbar {
+    /* background-color: #060b26; */
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.menuBars:hover {
+    cursor: pointer;
+}
+
+.menuBars {
+    margin-right: 2rem;
+    font-size: 2rem;
+    background: none;
+}
+
+.navMenu {
+    background-color: #060b26;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: 850ms;
+}
+
+.navMenuActive {
+    right: 0;
+    transition: 350ms;
+}
+
+.navText {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    height: 60px;
+}
+
+.navText a , .user a , .userInfo, .signup > div{
+    color: #f5f5f5;
+    font-size: 18px;
+    height: 48px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+} 
+
+.navText a:hover , .user a:hover , .signup > div:hover{
+    background-color: #1a83ff;
+}
+
+.navMenuItems {
+    width: 100%;
+}
+
+.navbarToggle {
+    background-color: #060b26;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.span {
+    margin-left: 16px;
+}
+
+.userInfo {
+    flex-direction: row;
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userInfo > p {
+    font-size: 14px;
+    color: #eee;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.signout {
+    cursor: pointer;
+}
+
+.signup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    /* padding: 0 20px 4px 20px; */
+    margin-bottom: 3px; 
+}
+
+.signup > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 0 6px;
+}
+
+/* .signup > button {
+    width: 80px;
+    height: 29px;
+    font-family: poppins;
+    color: royalblue;
+    font-weight: bolder;
+    background-color: rgb(223, 238, 247);
+    border: none;
+    border-radius: 5px;
+}
+
+.signup > button:hover{
+    cursor: pointer;
+    color: rgb(115, 140, 214);
+} */
+
+h2 {
+    color: #4a4d57;
+}

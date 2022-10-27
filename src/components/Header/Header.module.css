@@ -1,0 +1,240 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.2em;
+    margin-left: 50px;
+}
+
+a:link {
+    font-weight: 500;
+}
+
+.falcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.falcons > img {
+    filter: brightness(0) invert(1);
+    margin-right: -20px;
+}
+
+.falcons > a:link  {
+    font-weight: 600;
+    color: #3b58fc;
+    font-size: 24px;
+}
+
+.signup > a {
+    font-weight: 600;
+    color: #3b58fc;
+}
+
+.falcons  > a:link {
+    color: #eee;
+}
+
+.falcons  > a:link:hover {
+    cursor: pointer;
+}
+
+.routes ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30em;
+}
+
+.links a {
+    color: #31343c;
+    position: relative;
+    cursor: pointer;
+}
+
+.links a:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(96, 123, 202);
+    transition: .15s ease-in;
+}
+
+.links a:hover:after {
+    left: 0%;
+    width: 100%;
+}
+
+.links a:hover {
+    color: #64739e;
+    color: rgb(121, 121, 121);
+}
+
+.linkStyle a{
+    color: rgb(70, 181, 255);
+}
+
+.signup , .user{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.userIcon:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(199, 199, 199, 0.685);
+    padding: 4px;
+    width: 28px;
+    height: 28px;
+} 
+
+.user {
+    justify-content: space-evenly;
+}
+
+.userInfo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    padding: 10px 20px 20px 20px;
+    border-radius: 10px;
+    margin-top: 155px;
+    margin-right: 170px;
+    transition: 1s ease-in-out;
+}
+
+.userInfo > p {
+    font-size: 13px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.userInfo > p:first-of-type {
+    color: #31343c;
+    margin-top: 5px;
+}
+
+.userInfo > h3 {
+    color: #31343c;
+    letter-spacing: 0.6px;
+}
+
+.userInfo > hr {
+    margin-top: 10px;
+}
+
+.signout {
+    color: rgb(255, 97, 70);
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.signup > button {
+    width: 69px;
+    height: 29px;
+    font-family: poppins;
+    color: royalblue;
+    font-weight: bolder;
+    background-color: rgb(223, 238, 247);
+    border: none;
+    border-radius: 5px;
+}
+
+.signup > button:hover{
+    cursor: pointer;
+    color: rgb(115, 140, 214);
+}
+
+.googleButton {
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px;
+    width:  400px;
+    height: 50px;
+    border: none;
+    background-color: #4285f4;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 30px;
+    font-family: poppins;
+    font-size: 19px;
+}
+
+.googleIconDiv {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 45px;
+    width: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.googleButton > p {
+    margin-left: 20px;
+}
+
+h2 {
+    color: #4a4d57;
+}
+
+.closeIcon {
+    position: absolute;
+    margin-left: 84%;
+    margin-top: -4.5%;   
+    cursor: pointer;
+}
+
+.contactPara {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.contactPara a:visited {
+    color:rgb(96, 123, 202);
+}
+
+.sidebar {
+    display: none;
+}
+
+
+@media only screen and (max-width: 970px) {
+    .routes ,.user ,.signup {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+        /* margin-right: 50px; */
+    }
+    .sidebar {
+        display: block;
+    }
+    
+}
+
+@media only screen and (max-width: 1100px) {
+    
+}
+
+
+
+

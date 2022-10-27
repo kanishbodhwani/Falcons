@@ -1,0 +1,91 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #3b4166;
+}
+
+.footer > h2 , .about{
+    color: #ffffff;
+}
+
+.about {
+    display: flex;
+    /* flex: 0.70 1; */
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;    
+    margin-top: 30px;
+    color: whitesmoke;
+    margin-left: 5em;
+}
+
+.legal ul , .contact p, .socials div{
+    margin-top: 10px;
+    color: #eee;
+} 
+
+.socials div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+.color {
+    color: rgb(231, 229, 229);
+}
+
+.legal ul li a , .contact a{
+    color: rgb(167, 195, 255); 
+}
+
+.legal ul li a:hover , .contact a:hover {
+    text-decoration: underline;
+    color: rgb(224, 240, 255);
+}
+
+.footer hr {
+    width: 70%;
+    margin-top: 50px;
+    border: 0; 
+    border-top: 1px solid #ccc;
+}
+
+.footer p {
+    margin-top: 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+
+@media only screen and (max-width: 660px) {
+    .tc {
+        margin-left: 1em;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }    
+
+    .legal , .contact, .socials {
+        text-align: center;
+        margin-top: 10px;
+    }
+} 
+

@@ -1,0 +1,43 @@
+.club {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.club > h1 {
+    color: #2a2d31;
+    font-size: 35px;
+}
+
+.club > button {
+    width: 140px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 30px;
+    font-family: poppins;
+    font-size: 18px;
+    background-color: #7289da;
+    cursor: pointer;
+} 
+
+.clubs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 670px) {
+    .clubs {
+        grid-template-columns: 1fr;
+    } 
+}

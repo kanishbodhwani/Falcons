@@ -1,0 +1,77 @@
+.event > button {
+    width: 240px;
+    height: 78px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-family: poppins;
+    font-size: 18px;
+    background-color: #25d366;
+    padding: 10px;
+}
+
+.event > button > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.event > button:hover {
+    cursor: pointer;    
+    color: rgb(248, 248, 248);
+}
+
+.event , .upcomingEvents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.upcomingEvents  {
+    background-color: rgb(242, 243, 246);
+
+}
+
+.upcomingEvents > h3 {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.event > h1 {
+    color: #373a3f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 38px;
+    text-align: center;
+}
+
+.upcomingEvents > h1 {
+    color: #373a3f;
+    font-family: poppins;
+    font-size: 35px;
+    text-align: center;
+} 
+
+.eventCards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    flex-wrap: nowrap;
+    flex: 1;
+    overflow-x: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .eventCards {
+        justify-content: flex-start;
+    }
+}

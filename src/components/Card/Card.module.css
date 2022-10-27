@@ -1,0 +1,87 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    width: 290px;
+    height: 370px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.card > img {
+    height: 220px;
+}
+
+.cardAbout > p {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 15px;    
+    color: #31343c;
+}
+
+.members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.members > p {
+    margin-top: 10px;
+}
+
+.members > p > span {
+    font-weight: 500;
+}
+
+.members > button {
+    width: 100px;
+    height: 25px;
+    border: none;
+    background-color: #3b58fc;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-family: poppins;
+}
+
+.members > button:hover {
+    cursor: pointer;
+    color: #eee;
+}
+
+
+@media only screen and (max-width: 970px) {
+    .card {
+        width: 250px;
+        height: 340px;        
+    }
+}  
+
+@media only screen and (max-width: 813px) {
+    .card {
+        width: 200px;
+        height: 290px;
+    }
+    .cardAbout > p, .members > p {
+        font-size: 12px;
+    }
+    .cardAbout > h3 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .card {
+        margin: 0 20px;
+        flex: 0 0 auto;
+    }
+}   
+
+
+@media only screen and (max-width: 400px) {
+    .card {
+        height: 370px;
+    }
+}
